@@ -23,7 +23,7 @@ export default function Page() {
         {/* Bottom: Logo */}
         <div className="w-full pb-8 md:pb-12">
           <img
-            src="/vora-logo.svg"
+            src="/vora-logo1.svg"
             alt="Vora"
             className="
               pointer-events-none

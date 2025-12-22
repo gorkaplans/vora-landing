@@ -50,7 +50,7 @@ export default function NewsletterSignup() {
       {/* Title */}
       <div className="mb-4">
         <p className="mb-1 text-xs uppercase tracking-wide text-muted-foreground">Climbing Culture Container</p>
-        <h2 className="mb-3 text-3xl font-bold leading-tight text-card-foreground">ESCALADA I MÉS.</h2>
+        <h2 className="mb-3 text-3xl font-bold leading-tight text-card-foreground">Escalada i més.</h2>
         <p className="text-sm leading-relaxed text-muted-foreground">
           Vora és una newsletter d’escalada on parlem d’actualitat, estètica, cultura i comunitat.
 O de qualsevol altra cosa que ens agradi. L’enviem setmanalment, si el temps ens ho permet.{" "}
