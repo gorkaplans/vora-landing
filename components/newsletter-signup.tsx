@@ -47,21 +47,13 @@ export default function NewsletterSignup() {
 
   return (
     <div className="w-[280px] bg-card p-6 shadow-lg md:w-[320px]">
-      {/* Header */}
-      <div className="mb-4 bg-secondary px-3 py-1.5 text-center text-xs font-medium uppercase tracking-wide text-secondary-foreground">
-        brought to you by vora
-      </div>
-
       {/* Title */}
       <div className="mb-4">
-        <p className="mb-1 text-xs uppercase tracking-wide text-muted-foreground">coming soon</p>
-        <h2 className="mb-3 font-serif text-3xl font-bold leading-tight text-card-foreground">stay in the loop.</h2>
+        <p className="mb-1 text-xs uppercase tracking-wide text-muted-foreground">Climbing Culture Container</p>
+        <h2 className="mb-3 text-3xl font-bold leading-tight text-card-foreground">ESCALADA I MÉS.</h2>
         <p className="text-sm leading-relaxed text-muted-foreground">
-          A thoughtfully curated newsletter bringing you the best stories, ideas, and inspiration. Join us on this{" "}
-          <span className="uppercase">journey</span> or{" "}
-          <a href="mailto:hello@vora.com" className="underline">
-            email us
-          </a>
+          Vora és una newsletter d’escalada on parlem d’actualitat, estètica, cultura i comunitat.
+O de qualsevol altra cosa que ens agradi. L’enviem setmanalment, si el temps ens ho permet.{" "}
           .
         </p>
       </div>
@@ -70,18 +62,17 @@ export default function NewsletterSignup() {
       <form onSubmit={handleSubmit} className="space-y-3">
         <div>
           <p className="mb-2 text-xs font-medium uppercase tracking-wide text-card-foreground">
-            sign up for first dibs
-          </p>
+Rep la newsletter          </p>
           <Input
             type="text"
-            placeholder="Your name"
+            placeholder="Nom"
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="mb-2 bg-input text-sm text-foreground placeholder:text-muted-foreground"
           />
           <Input
             type="email"
-            placeholder="Add your email pls"
+            placeholder="Correu"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -94,7 +85,7 @@ export default function NewsletterSignup() {
           disabled={status === "loading"}
           className="w-full bg-foreground font-medium uppercase tracking-wide text-background hover:bg-foreground/90 disabled:opacity-60"
         >
-          {status === "loading" ? "sending..." : "join our club"}
+          {status === "loading" ? "sending..." : "subscriu-t’hi"}
         </Button>
 
         {msg ? (
