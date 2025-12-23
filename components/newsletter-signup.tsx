@@ -51,7 +51,7 @@ export default function NewsletterSignup() {
     {/* Caja texto */}
     <div className="border-2 border-black bg-[#e7e1c7] p-6 shadow-[6px_6px_0_0_#000]">
       <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-black/80">
-        Coming soon
+        Climbing Culture Container
       </p>
 
       {/* TITULAR → Anton */}
@@ -65,9 +65,6 @@ export default function NewsletterSignup() {
         O de qualsevol altra cosa que ens agradi. L’enviem setmanalment, si el temps ens ho permet.
       </p>
 
-      <div className="mt-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-black">
-        Journey <span className="text-black/50">or</span> Email us
-      </div>
     </div>
 
     {/* Caja form */}
