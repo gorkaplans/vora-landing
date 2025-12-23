@@ -138,3 +138,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Fuente por defecto */
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Titulares */
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+

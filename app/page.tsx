@@ -6,9 +6,9 @@ export default function Page() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/SnO7AUAxs25NXU0IPoLKLHyrCjo.webp"
+          src="/bg-poster.webp"
           alt=""
-          className="h-full w-full object-cover blur-sm"
+          className="h-full w-full object-cover blur-xs"
         />
         <div className="absolute inset-0 bg-background/10" />
       </div>
@@ -32,7 +32,7 @@ export default function Page() {
               max-w-[1600px]
               px-6
               md:px-12
-              opacity-90
+              opacity-100
             "
           />
         </div>

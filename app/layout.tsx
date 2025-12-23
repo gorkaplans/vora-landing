@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { Geist, Cormorant_Garamond } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { fontDisplay, fontBody } from "./fonts";
+
 
 const _geist = Geist({ subsets: ["latin"] })
 const _cormorant = Cormorant_Garamond({
@@ -34,17 +36,17 @@ export const metadata: Metadata = {
   },
 }
 
+
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="es">
-      <body className={`font-sans antialiased ${_cormorant.variable}`}>
+    <html lang="ca">
+      <body className={`${fontDisplay.variable} ${fontBody.variable}`}>
         {children}
-        <Analytics />
       </body>
     </html>
-  )
+  );
 }

@@ -46,52 +46,74 @@ export default function NewsletterSignup() {
   }
 
   return (
-    <div className="w-[280px] bg-card p-6 shadow-lg md:w-[320px]">
-      {/* Title */}
-      <div className="mb-4">
-        <p className="mb-1 text-xs uppercase tracking-wide text-muted-foreground">Climbing Culture Container</p>
-        <h2 className="mb-3 text-3xl font-bold leading-tight text-card-foreground">Escalada i més.</h2>
-        <p className="text-sm leading-relaxed text-muted-foreground">
-          Vora és una newsletter d’escalada on parlem d’actualitat, estètica, cultura i comunitat.
-O de qualsevol altra cosa que ens agradi. L’enviem setmanalment, si el temps ens ho permet.{" "}
-          .
-        </p>
-      </div>
+<div className="w-full max-w-[780px]">
+  <div className="grid gap-4 md:grid-cols-2">
+    {/* Caja texto */}
+    <div className="border-2 border-black bg-[#e7e1c7] p-6 shadow-[6px_6px_0_0_#000]">
+      <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-black/80">
+        Coming soon
+      </p>
 
-      {/* Form */}
-      <form onSubmit={handleSubmit} className="space-y-3">
-        <div>
-          <p className="mb-2 text-xs font-medium uppercase tracking-wide text-card-foreground">
-Rep la newsletter          </p>
+      {/* TITULAR → Anton */}
+      <h2 className="font-display mb-4 text-[42px] leading-[0.95] tracking-[-0.03em] text-black md:text-[52px]">
+        ESCALADA I MÉS.
+      </h2>
+
+      {/* TEXTO → Space Grotesk (body por defecto) */}
+      <p className="max-w-[38ch] text-[14px] leading-relaxed text-black/75">
+        Vora és una newsletter d’escalada on parlem d’actualitat, estètica, cultura i comunitat.
+        O de qualsevol altra cosa que ens agradi. L’enviem setmanalment, si el temps ens ho permet.
+      </p>
+
+      <div className="mt-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-black">
+        Journey <span className="text-black/50">or</span> Email us
+      </div>
+    </div>
+
+    {/* Caja form */}
+    <div className="border-2 border-black bg-[#e7e1c7] p-6 shadow-[6px_6px_0_0_#000]">
+      <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-black/80">
+        Sign up for first news
+      </p>
+
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="space-y-3">
           <Input
             type="text"
-            placeholder="Nom"
+            placeholder="Give us your name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="mb-2 bg-input text-sm text-foreground placeholder:text-muted-foreground"
+            className="h-10 rounded-none border-0 border-b-2 border-black bg-transparent px-0 text-[14px] text-black placeholder:text-black/40 focus-visible:ring-0 focus-visible:ring-offset-0"
           />
           <Input
             type="email"
-            placeholder="Correu"
+            placeholder="And your email, pls"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="bg-input text-sm text-foreground placeholder:text-muted-foreground"
+            className="h-10 rounded-none border-0 border-b-2 border-black bg-transparent px-0 text-[14px] text-black placeholder:text-black/40 focus-visible:ring-0 focus-visible:ring-offset-0"
           />
         </div>
 
-        <Button
+        <button
           type="submit"
           disabled={status === "loading"}
-          className="w-full bg-foreground font-medium uppercase tracking-wide text-background hover:bg-foreground/90 disabled:opacity-60"
+          className="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-black disabled:opacity-50"
         >
-          {status === "loading" ? "sending..." : "subscriu-t’hi"}
-        </Button>
+          {status === "loading" ? "sending..." : "Join our club"}
+          <span aria-hidden className="text-black/60">→</span>
+        </button>
 
         {msg ? (
-          <p className={`text-sm ${status === "error" ? "text-red-500" : "text-muted-foreground"}`}>{msg}</p>
+          <p className={`text-sm ${status === "error" ? "text-red-600" : "text-black/70"}`}>
+            {msg}
+          </p>
         ) : null}
       </form>
     </div>
+  </div>
+</div>
+
+
   )
 }
