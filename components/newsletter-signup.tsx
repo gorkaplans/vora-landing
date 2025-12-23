@@ -49,7 +49,7 @@ export default function NewsletterSignup() {
 <div className="w-full max-w-[780px]">
   <div className="grid gap-4 md:grid-cols-2">
     {/* Caja texto */}
-    <div className="border-2 border-black bg-[#e7e1c7] p-6 shadow-[6px_6px_0_0_#000]">
+    <div className="border-2 border-black bg-[#e7e1c7] p-6">
       <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-black/80">
         Climbing Culture Container
       </p>
@@ -68,7 +68,7 @@ export default function NewsletterSignup() {
     </div>
 
     {/* Caja form */}
-    <div className="border-2 border-black bg-[#e7e1c7] p-6 shadow-[6px_6px_0_0_#000]">
+    <div className="border-2 border-black bg-[#e7e1c7] p-6">
       <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-black/80">
         Sign up for first news
       </p>
