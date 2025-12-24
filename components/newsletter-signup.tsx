@@ -49,7 +49,7 @@ export default function NewsletterSignup() {
 <div className="w-full max-w-[780px]">
   <div className="grid gap-4 md:grid-cols-2">
     {/* Caja texto */}
-    <div className="border-2 border-black bg-[#e7e1c7] p-6">
+    <div className="border-2 border-black bg-[#ebeced] p-6">
       <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-black/80">
         Climbing Culture Container
       </p>
@@ -68,7 +68,7 @@ export default function NewsletterSignup() {
     </div>
 
     {/* Caja form */}
-    <div className="border-2 border-black bg-[#e7e1c7] p-6">
+    <div className="border-2 border-black bg-[#ebeced] p-6">
       <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-black/80">
         Sign up for first news
       </p>
@@ -77,14 +77,14 @@ export default function NewsletterSignup() {
         <div className="space-y-3">
           <Input
             type="text"
-            placeholder="Give us your name"
+            placeholder="El teu nom"
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="h-10 rounded-none border-0 border-b-2 border-black bg-transparent px-0 text-[14px] text-black placeholder:text-black/40 focus-visible:ring-0 focus-visible:ring-offset-0"
           />
           <Input
             type="email"
-            placeholder="And your email, pls"
+            placeholder="El teu mail"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -97,7 +97,7 @@ export default function NewsletterSignup() {
           disabled={status === "loading"}
           className="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-black disabled:opacity-50"
         >
-          {status === "loading" ? "sending..." : "Join our club"}
+          {status === "loading" ? "sending..." : "Subscriu-te"}
           <span aria-hidden className="text-black/60">→</span>
         </button>
 

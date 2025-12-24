@@ -2,7 +2,7 @@ import NewsletterSignup from "@/components/newsletter-signup"
 
 export default function Page() {
   return (
-    <main className="relative min-h-screen overflow-hidden">
+    <main className="relative min-h-screen  overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <img
